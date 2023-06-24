@@ -1,8 +1,10 @@
 import Button from '@/components/Common/Button';
 import styles from './HeroSection.module.css';
 import { FC } from 'react';
+import Image from 'next/image';
+import hero_banner from '../../../../public/images/hero_banner.png';
 
-const HeroSection:FC = () => {
+const HeroSection: FC = () => {
   return (
     <div className={styles.hero__container}>
       <div className={styles.hero__content}>
@@ -15,6 +17,9 @@ const HeroSection:FC = () => {
         <div className={styles.hero__btns}>
           <Button textColor="#fff" bgColor="#A522C3" linkTo="/signup" />
         </div>
+      </div>
+      <div className={styles.hero__banner}>
+        <Image src={hero_banner} alt="hero-banner" />
       </div>
     </div>
   );

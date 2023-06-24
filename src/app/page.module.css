@@ -3,5 +3,7 @@
 }
 
 .section__one {
-  background: #221c38;
+  background: url('../../public/images/hero_ellipse_1.png') no-repeat,
+    url('../../public/images/hero_ellipse_2.png') no-repeat, 
+    url('../../public/images/hero_ellipse_3.png') no-repeat, #221c38;
 }
