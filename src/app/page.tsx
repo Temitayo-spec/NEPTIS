@@ -1,4 +1,4 @@
-import { Features, HeroSection, HowItWorks, Navbar } from '@/components';
+import { Features, HeroSection, HowItWorks, Navbar, Testimonials } from '@/components';
 import styles from './page.module.css';
 
 const Home = () => {
@@ -10,6 +10,7 @@ const Home = () => {
       </div>
       <Features />
       <HowItWorks />
+      <Testimonials />
     </main>
   );
 };
