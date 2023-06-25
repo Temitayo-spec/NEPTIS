@@ -6,16 +6,23 @@ type ButtonProps = {
   bgColor: string;
   linkTo: string;
   textColor: string;
+  width?: string;
 };
 
-const Button: FC<ButtonProps> = ({ bgColor, linkTo, textColor }) => {
+const Button: FC<ButtonProps> = ({ bgColor, linkTo, textColor, width }) => {
   return (
-    <Link href={linkTo}>
+    <Link
+      href={linkTo}
+      style={{
+        width: width,
+      }}
+    >
       <button
         className={styles.button}
         style={{
           backgroundColor: bgColor,
           color: textColor,
+          width: width,
         }}
       >
         Get Started

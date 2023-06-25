@@ -1,0 +1,78 @@
+.pricing__container {
+  background: #221c38;
+  display: flex;
+  padding: 6.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.pricing__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.pricing__header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.pricing__header p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.pricing__cards__ctn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.pricing__card {
+  display: flex;
+  padding: 2.5rem 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border-radius: 16px;
+}
+
+.pricing__card h2 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.pricing__card h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.plan__features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.plan__features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.plan__features li span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 300;
+}

@@ -3,8 +3,9 @@ import Image from 'next/image';
 import avatar from '../../../../public/images/testimonial_avatar.png';
 import arrow__left from '../../../../public/svgs/ic_arrow-back.svg';
 import arrow__right from '../../../../public/svgs/ic_arrow-forward.svg';
+import { FC } from 'react';
 
-const Testimonial = () => {
+const Testimonial: FC = () => {
   return (
     <div className={styles.testimonial__ctn}>
       <div className={styles.testimonial__header}>
