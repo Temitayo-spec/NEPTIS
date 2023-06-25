@@ -29,3 +29,32 @@
 .hamburger {
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+  .inner {
+    justify-content: space-between;
+  }
+
+  .logo_ctn {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-right: 1.5rem;
+  }
+
+  .logo img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .logo h1 {
+    font-size: 1.25rem;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}

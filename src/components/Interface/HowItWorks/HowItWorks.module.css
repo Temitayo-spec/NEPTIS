@@ -89,3 +89,39 @@
   border: 1px solid #c6c2d6;
   border-radius: 0.5em;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1em 0 1em;
+  }
+  .container .title {
+    font-size: 1.5rem;
+  }
+  .flex {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .flex__item_left {
+    width: 100%;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .flex__item_left .items h2 {
+    font-size: 1rem;
+  }
+
+  .line {
+    height: 75%;
+  }
+
+  .flex__item_right {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .flex__item_right img {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -17,3 +17,10 @@
 .button:hover {
   transform: translateY(-3px);
 }
+
+@media screen and (max-width: 768px) {
+  .button {
+    padding: 1rem 2rem;
+    font-size: 0.875rem;
+  }
+}

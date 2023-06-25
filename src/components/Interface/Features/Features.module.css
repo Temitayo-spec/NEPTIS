@@ -56,3 +56,21 @@
   font-weight: 300;
   line-height: 1.3125rem;
 }
+
+@media screen and (max-width: 768px) {
+  .features__title {
+    font-size: 1.5rem;
+  }
+  .grid__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card__inner {
+    align-items: center;
+    text-align: center;
+  }
+
+  .card__inner h2 {
+   font-size: 0.9375rem;
+  }
+}

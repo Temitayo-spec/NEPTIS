@@ -1,7 +1,7 @@
 .pricing__container {
   background: #221c38;
   display: flex;
-  padding: 6.25rem;
+  padding: 6.25rem 0;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
@@ -35,6 +35,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .pricing__card {
@@ -75,4 +77,37 @@
   color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
   font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .pricing__container {
+    padding: 2.5rem 0;
+  }
+  .pricing__header {
+    width: 100%;
+  }
+  .pricing__header h1 {
+    font-size: 1.5rem;
+  }
+  .pricing__header p {
+    font-size: 0.875rem;
+  }
+  .pricing__cards__ctn {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pricing__card {
+    padding: 1.5rem;
+  }
+  .pricing__card h1 {
+    font-size: 1.5rem;
+  }
+  .plan__features {
+    gap: 0.5rem;
+  }
+  .plan__features li {
+    gap: 0.25rem;
+  }
+  .plan__features li span {
+    font-size: 0.875rem;
+  }
 }

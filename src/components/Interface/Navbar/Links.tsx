@@ -1,10 +1,16 @@
 import Button from '@/components/Common/Button';
 import styles from './Links.module.css';
 import Link from 'next/link';
+import { FC } from 'react';
 
-const Links = () => {
+type LinksProps = {
+  toggle: boolean;
+};
+
+const Links: FC<LinksProps> = ({ toggle }) => {
+  console.log(toggle); 
   return (
-    <ul className={styles.links__container}>
+    <ul className={`${styles.links__container} ${toggle ? styles.active : ''}`}>
       <li className={styles.link}>
         <Link href="/">Home</Link>
       </li>
@@ -17,7 +23,7 @@ const Links = () => {
       <li className={styles.link}>
         <Link href="/pricing">Pricing</Link>
       </li>
-      <Button bgColor="#fff" linkTo="/login" textColor="#221c38" />
+      <Button bgColor="#fff" linkTo="/signup" textColor="#221c38" />
     </ul>
   );
 };

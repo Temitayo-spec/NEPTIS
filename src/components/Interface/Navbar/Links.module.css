@@ -22,3 +22,28 @@
   padding: 0.3em 0;
   border-bottom: 1px solid #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .links__container {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 90%;
+    background: #221c38;
+    border-radius: 0.5em;
+    padding: 1.5rem 0;
+    margin-left: -100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .active {
+    display: flex;
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+}

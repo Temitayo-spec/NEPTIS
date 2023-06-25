@@ -9,7 +9,6 @@
   align-items: center;
   text-align: center;
   padding: 1rem;
-  height: calc(100vh - 80px);
   max-height: 100%;
   width: 80%;
   margin: 0 auto;
@@ -52,4 +51,22 @@
   padding: 0.3em;
   border: 1px solid #c6c2d6;
   border-radius: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__content {
+    width: 100%;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 0.875rem;
+  }
+
+  .hero__banner {
+    width: 95%;
+  }
 }

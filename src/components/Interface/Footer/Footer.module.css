@@ -65,3 +65,30 @@
   height: 1.2rem;
   margin-right: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    padding: 1.5rem 0;
+    align-items: flex-start;
+  }
+
+  .footer__logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__link__wrapper {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .footer__link__items {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .footer__social {
+    margin-bottom: 1.5rem;
+  }
+}
