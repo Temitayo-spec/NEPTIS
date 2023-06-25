@@ -14,4 +14,11 @@
   color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
   font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+
+.links__container li a:hover {
+  color: #fff;
+  padding: 0.3em 0;
+  border-bottom: 1px solid #fff;
 }
