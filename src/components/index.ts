@@ -5,3 +5,4 @@ export { default as HowItWorks } from './Interface/HowItWorks';
 export { default as Testimonials } from './Interface/Testimonials';
 export { default as Pricing } from './Interface/Pricing';
 export { default as Footer } from './Interface/Footer';
+export {default as Preloader} from './Common/Preloader'; 

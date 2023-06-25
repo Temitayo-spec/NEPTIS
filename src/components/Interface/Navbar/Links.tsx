@@ -8,7 +8,6 @@ type LinksProps = {
 };
 
 const Links: FC<LinksProps> = ({ toggle }) => {
-  console.log(toggle); 
   return (
     <ul className={`${styles.links__container} ${toggle ? styles.active : ''}`}>
       <li className={styles.link}>

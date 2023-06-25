@@ -1,0 +1,88 @@
+.preloader__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #221c38;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.remove {
+  animation: remove 0.5s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes remove {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.remove .loader {
+  animation: slideOut 0.5s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loader h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.loader::after {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: loader 0.8s linear infinite;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.remove .loader::after {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+}

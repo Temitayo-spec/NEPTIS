@@ -13,7 +13,7 @@ const Navbar: FC = () => {
       <div className={styles.inner}>
         <div className={styles.logo_ctn}>
           <div className={styles.logo}>
-            <Image src={neptis_logo} alt="neptis-logo" />
+            <Image src={neptis_logo} alt="neptis-logo" priority />
             <h1 className={styles.logo_text}>Neptis</h1>
           </div>
           <div className={styles.hamburger} onClick={() => setToggle(!toggle)}>
