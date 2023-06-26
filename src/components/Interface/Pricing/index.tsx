@@ -1,24 +1,38 @@
+'use client';
 import Button from '@/components/Common/Button';
 import styles from './Pricing.module.css';
 import { pricingData } from './PricingData';
 import ic_checkmark from '../../../../public/svgs/ic_checkmark.svg';
 import Image from 'next/image';
 import { FC } from 'react';
+import { motion } from 'framer-motion';
+import { cardVariants, container, titleVariant } from './pricingVariants';
 
 const index: FC = () => {
   return (
     <div className={styles.pricing__container}>
-      <div className={styles.pricing__header}>
-        <h1>Pricing and Plans</h1>
-        <p>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={container}
+        className={styles.pricing__header}
+      >
+        <motion.h1 variants={titleVariant}>Pricing and Plans</motion.h1>
+        <motion.p variants={titleVariant}>
           Lorem ipsum dolor sit amet consectetur. Aliquet scelerisque sem
           commodo turpis ipsum.
-        </p>
-      </div>
-      <div className={styles.pricing__cards__ctn}>
+        </motion.p>
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={container}
+        className={styles.pricing__cards__ctn}
+      >
         {pricingData.map((item, index) => {
           return (
-            <div
+            <motion.div
+              variants={cardVariants}
               className={styles.pricing__card}
               key={index}
               style={{
@@ -43,10 +57,10 @@ const index: FC = () => {
                   );
                 })}
               </ul>
-            </div>
+            </motion.div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };
